@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Face Restorer
+
+A modern web app to restore and enhance faces in images using the power of AI (GFPGAN via Replicate API). Upload a photo, and get a restored version side-by-side—all in your browser.
+
+## Features
+
+- Upload an image via drag-and-drop (Bytescale widget)
+- AI-powered face restoration (GFPGAN)
+- See original and restored images side-by-side
+- Simple, clean, and responsive UI
+
+## Demo
+
+> _Add a link or screenshot here if deployed_
+
+## Tech Stack
+
+- **Next.js (App Router)**
+- **React 19**
+- **Replicate API** (GFPGAN model)
+- **Bytescale Upload Widget**
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+git clone <repo-url>
+cd face-restorer-js
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up environment variables
+
+Create a `.env.local` file in the project root with the following:
+
+```env
+REPLICATE_API_TOKEN=your_replicate_api_token
+NEXT_PUBLIC_BYTESCALE_PUBLIC_KEY=your_bytescale_public_key
+```
+
+- Get your Replicate API token from https://replicate.com/account
+- Get your Bytescale public key from https://www.bytescale.com/
+
+### 4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Upload a photo (face images work best).
+2. Wait for the AI to process and restore the image.
+3. View and compare the original and restored images side-by-side.
 
-## Learn More
+## Troubleshooting
 
-To learn more about Next.js, take a look at the following resources:
+- **500 Internal Server Error:**
+  - Make sure your `REPLICATE_API_TOKEN` is set and valid.
+  - Check the server logs for detailed error messages.
+- **Image not uploading:**
+  - Ensure your `NEXT_PUBLIC_BYTESCALE_PUBLIC_KEY` is correct.
+- **API rate limits:**
+  - Replicate and Bytescale may have usage limits on free plans.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Deploy easily to Vercel, Netlify, or any platform supporting Next.js.
+- Remember to set the required environment variables in your deployment settings.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+_Developed with ❤️ by a Google-level engineer. PRs and issues welcome!_
