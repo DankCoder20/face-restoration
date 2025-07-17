@@ -11,7 +11,11 @@ A modern web app to restore and enhance faces in images using the power of AI (G
 
 ## Demo
 
-> _Add a link or screenshot here if deployed_
+| Original                      | Restored                      |
+| ----------------------------- | ----------------------------- |
+| ![Original](public/image.png) | ![Restored](public/image.png) |
+
+> _Replace these with your actual before/after images for a real demo_
 
 ## Tech Stack
 
