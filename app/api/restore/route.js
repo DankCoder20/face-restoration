@@ -15,6 +15,6 @@ export async function POST(req) {
     return new Response(JSON.stringify({ restoredUrl }), { status: 200 });
   } catch (error) {
     console.error('Restore API error:', error);
-    return new Response(JSON.stringify({ error: "Failed to restore image", details: error?.message || error }), { status: 500 });
+    return new Response(JSON.stringify({ error: "Failed to restore image mostly because you have run out of credits :(", details: error?.message || error }), { status: 500 });
   }
 }
