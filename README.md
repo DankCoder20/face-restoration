@@ -25,7 +25,7 @@ A modern web app to restore and enhance faces in images using the power of AI (G
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/DankCoder20/face-restoration.git
 cd face-restorer-js
 ```
 
@@ -82,4 +82,4 @@ MIT
 
 ---
 
-_Developed with ❤️ by a Google-level engineer. PRs and issues welcome!_
+_Developed with ❤️ by an aspiring developer . PRs and issues welcome!_
